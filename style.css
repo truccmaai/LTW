@@ -1,0 +1,376 @@
+    /*Phần đầu trang: Header*/
+    div {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+.he {
+    align-content: center;
+    margin-right: 300px;
+    height: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: solid rgb(190, 186, 186);
+    justify-content: center;
+    background-color: #efdadd;
+    position: fixed;
+
+z-index: 999;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 20%;
+    width: auto;
+    font-weight: bold;
+
+}
+    li {
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+.main-menu li a {
+
+    text-decoration: none;
+    padding: 5px 10px;
+    color: rgb(75, 74, 74);
+}
+
+.main-menu li a:hover {
+    color: rgb(236, 140, 140);
+}
+
+.logoimg {
+    height: auto;
+    width: 150px;
+}
+
+    .dr {
+        display: none;
+        top: 40px;
+        position: absolute;
+        background-color: #fff4f4;
+        border: 3px solid rgb(233, 233, 233);
+        margin: 5px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .dr li {
+        float: none;
+        list-style: none;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+
+
+    li:hover .dr {
+        display: block;
+
+
+    }
+
+
+    .logo {
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .onefilm img {
+        height: 350px;
+        width: 230px;
+        border-radius: 20px;
+        border: 2px solid rgb(236, 140, 140);
+    
+    }
+    
+    .onefilm img:hover {
+        /* height: 380px;
+        width: 260px; */
+        cursor: pointer;
+    }
+    
+    .logo {
+        position: relative;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+        0% {
+            left: 0px;
+        }
+
+        25% {
+            left: 25px;
+        }
+
+        50% {
+            left: 0px;
+        
+        }
+
+        75% {
+            left: -25px;
+            
+        }
+
+        100% {
+            left: 0px;
+            
+        }
+
+    /*ndung trang chu*/
+    }
+    .banner {
+        width: 100%;
+        height: 400px;  
+        }
+        .slider{
+            
+            width: 1000px;
+            max-width: 100vw;
+            height: 400px;
+            margin: 20px auto 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider .list{
+            position: absolute;
+            width: max-content;
+            height: 90%;
+            left: 0;
+            top: 0;
+            display: flex;
+            transition: 1s;
+        }
+        .slider .list img{
+            width: 1000px;
+            max-width: 100vw;
+            height: 90%;
+            object-fit: cover;
+        }
+        .slider .buttons{
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .slider .buttons button{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff5;
+            color: #fff;
+            border: none;
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .slider .dots{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            color: #fff;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .slider .dots li{
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            margin: 10px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .slider .dots li.active{
+            width: 30px;
+        }
+        @media screen and (max-width: 768px){
+            .slider{
+                height: 400px;
+            }
+        }
+
+        .ch {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .seemore {
+            height: 354px;
+            width: 234px;
+            position: absolute;
+            text-align: center;
+            display: none;
+            transition: opacity 0.3s ease;
+            background-color: black;
+            border-radius: 17px;
+        }
+        
+        .h {
+            position: absolute;
+            text-align: center;
+            display: none;
+            transition: opacity 3s ease;
+            color: white;
+        }
+        
+        .ch:hover .seemore {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50.5%, -50.5%);
+            display: block;
+            opacity: 0.7;
+        }
+        
+        .ch:hover .h {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+        
+        }
+        .bo {
+            width: 80%;
+            margin: auto;
+        }
+        
+        .phim {
+            text-align: center;
+            margin: 20px;
+            font-size: 3ch;
+            font-weight: bold;
+            color: rgb(236, 140, 140);
+            border-bottom: 3px solid rgb(236, 140, 140);
+            padding-bottom: 10px;
+        }
+        
+        .btn {
+            margin-left: 140px;
+            margin-top: 10px;
+            border-radius: 7px;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: rgb(99, 99, 99);
+            background-color: #ffeef1;
+        }
+        
+        .btn:hover {
+            background-color: rgb(236, 140, 140);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+    /*Phần cuối trang: Footer*/
+    .foo {
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+
+
+    }
+
+    .foo img {
+        width: 100%;
+
+    }
+
+    .man {
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+
+        background-color: black;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        opacity: 0.8;
+    }
+
+    .foocontent {
+        height: 250px;
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fooleft {
+        height: 100%;
+        width: auto;
+       
+     
+    }
+
+   
+    .foobet {
+        height: 100%;
+        width: auto;
+        
+    }
+
+    .foobet h4 {
+        color: rgb(236, 140, 140);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .kn {
+        color: #ffeef1;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .fooright {
+        height: 100%;
+        width: auto;
+       
+    }
+
+    .fooright h4 {
+        color: rgb(236, 140, 140);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .contentchild{
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       
+    }

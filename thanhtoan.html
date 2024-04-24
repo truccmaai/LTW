@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script1.js"></script>
+   
+    <title>Movie Ticket Booking</title>
+
+</head>
+
+<body style="margin: 0;overflow-x: hidden;">
+    <div class="menu" style="top: 0;">
+        <div class="logo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/logo5.webp?alt=media&token=b2b042cb-5aa4-4ce3-be87-39116bb5b9b1"
+                style="height: 70px;" alt="" class="logoimg">
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="Trang chủ.html">Trang chủ</a>
+                <li><a href="">Phim</a>
+                    <ul class="dr">
+                        <li><a href="#">Phim sắp chiếu</a></li>
+                        <li><a href="#">Phim đang chiếu </a></li>
+
+                    </ul>
+                </li>
+
+                </li>
+
+                <li><a href="">Giá vé</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Thành viên</a>
+                    <ul class="dr">
+                        <li><a href="#">Tài khoản</a></li>
+                        <li><a href="#">Quyền lợi </a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a>
+                    <ul class="dr" id="checklogin">
+                        <li><a href="dangnhap.html">Đăng nhập</a></li>
+                        <li><a href="dangky.html">Đăng kí</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Phần giữa -->
+<div style="display: flex;justify-content: space-around;align-items: center;">
+    <div id="qrcode">
+<div>
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <img style="height: 200px;width: auto;" src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/z5359805969169_4a8cc87892f6d5390e8db03132824a62.jpg?alt=media&token=72fe10eb-e84f-4971-8e8b-c008fdcc91d9" alt="">
+    </div>
+    <h3>Quét mã để thanh toán</h3>
+</div>
+    </div>
+    <div id="checkcount" >
+        
+        <div style="display:flex; justify-content:start">
+            <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/media_images_2024_01_09_kungfu-panda-161211-090124-15.png?alt=media&amp;token=10ce1b95-0002-4f99-bfb9-a9c3b47a1f66">
+            <div id="phimcheckcount">
+                <div id="namephimcheckcount">KungFu Panda 4</div>
+                <div id="durationphimcheckcount">Thời lượng: 94 phút</div>
+                <div id="genrephimcheckcount">Thể loại: Hoạt Hình, Hài Hước</div>
+            </div>
+        </div>
+        <div id="infoticketcheckcount">
+            <div style="display: flex; justify-content: start; padding: 20px; margin: auto">
+                <div id="theaterofcheckcount">Movie Star Cinemas</div>
+                <div> - </div>
+                <div id="roomofcheckcount">Hồ Chí Minh</div>
+            </div>
+            <div style="display: flex; margin: 10px 25px; ">
+                <div>Performance:</div>
+                <div id="starttimecheckcount">19:00</div>
+                <div id="showdatecheckcount">20-04-2024</div>
+            </div>
+        </div>
+        <div style=" margin-top: 20px; width: 100%; justify-content: center; display: flex;border-top:1px solid">
+            <div style="width:90%;">
+                <div style="display: flex; height: auto;align-items: center; margin:20px 20px;width:100%">
+                    <div style="width: 80%; color: rgb(236, 140, 140);">Seat: <span id="selectedListcheckcount"><span style="color: black;" id="llll"></span></span></div>
+                    <div style="color: rgb(236, 140, 140);"><span id="pricecheckcount"></span>$</div>
+                </div>
+                <div style="display: flex; height: auto; border-top: 1px dashed; align-items: center;margin:20px 20px; width: 100%">
+                    <div style="width: 80%; color: rgb(236, 140, 140);">Combo:<div id="selectcombocheckcount"></div> </div>
+                    <div style="color: rgb(236, 140, 140);"><span id="pricecombocheckcount"></span>$</div>
+                </div>
+                <div style="display: flex; height: auto; border-top: 1px dashed; align-items: center;margin:20px 20px; width: 100%">
+                    <div style="width: 80%; color: rgb(236, 140, 140);">Total: </div>
+                    <div style="color: rgb(236, 140, 140);"><span id="totalpricefullcheckcount"></span>$</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+    <div class="foo">
+        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/1377814-spider-man-no-way-home-movie-2021-4k-pc-wallpaper.jpg?alt=media&token=d1c9d70a-cbb1-4c3b-b3b4-8a21ece675a1"
+            alt="">
+        <div class="man"></div>
+        <div class="foocontent">
+            <div class="contentchild">
+                <div class="fooleft">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/logo5.webp?alt=media&token=b2b042cb-5aa4-4ce3-be87-39116bb5b9b1"
+                        style="height: 60px;width: auto;" alt="" class="logoimg">
+                    <p class="kn">Thương hiệu nhượng quyền, giám<br> <br>đốc - nhà sản xuất Mai Long Linh. <br> <br>Rất hân hạnh được đón tiếp các
+                        bạn.</p>
+                </div>
+            </div>
+           <div class="contentchild">
+            <div class="foobet">
+                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <div class="kn">Facebook: MovieStar Cinemas</div>
+                <div class="kn">Instagram: moviestar.cinemas</div>
+                <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/dathongbao.png?alt=media&token=b1d86be7-167f-4b62-b2c0-f2b0ffc6f34d"
+                    alt="" style="height: 50px;width: auto;margin-top: 20px;">
+            </div>
+           </div>
+            <div class="contentchild" >
+                <div class="fooright">
+                    <h4>LIÊN HỆ</h4>
+                    <div class="kn">Hotline: 1900 6017</div>
+                    <p class="kn">Giờ làm việc: 8:00 - 22:00 <br><br>(Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                    <div class="kn">Email hỗ trợ: moviestar@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            ShowBill();
+           };
+   </script>
+</body>
+
+</html>

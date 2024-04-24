@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script1.js"></script>
+    <title>Movie Ticket Booking</title>
+
+</head>
+
+<body style="margin: 0;overflow-x: hidden;">
+    <!-- //Phần đầu (header) -->
+   
+    <div class="menu">
+        <div class="logo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/logo5.webp?alt=media&token=b2b042cb-5aa4-4ce3-be87-39116bb5b9b1"
+                style="height: 70px;" alt="" class="logoimg">
+        </div>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="Trang chủ.html">Trang chủ</a>
+                <li><a href="">Phim</a>
+                    <ul class="dr">
+                        <li><a href="#">Phim sắp chiếu</a></li>
+                        <li><a href="#">Phim đang chiếu </a></li>
+
+                    </ul>
+                </li>
+
+                </li>
+
+                <li><a href="">Giá vé</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Thành viên</a>
+                    <ul class="dr">
+                        <li><a href="#">Tài khoản</a></li>
+                        <li><a href="#">Quyền lợi </a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a>
+                    <ul class="dr" id="checklogin">
+                        <li><a href="dangnhap.html">Đăng nhập</a></li>
+                        <li><a href="dangky.html">Đăng kí</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+ <!-- Phần giữa -->
+    <div >
+        <div style="height: 130px;"></div>
+        <div class="containek">
+            <style>
+                .containekmain{
+                    width: 1200px;
+                }
+                .containekmain2{
+                    width: 1200px;
+                }
+            </style>
+            <div class="containekhead">
+                MUA VÉ TRỰC TUYẾN
+            </div>
+
+            <div class="containekmain" id="containekmain">
+                <div class="containekleft">
+                    <div class="lefttop">
+                        <span class="ghichu">
+                            <i class="fa-solid fa-square"
+                               style="color: rgb(169, 0, 0);font-size: 35px;"></i>
+                            <label for="">Đã chọn</label>
+                        </span>
+                        <span class="ghichu">
+                            <i class="fa-solid fa-square"
+                               style="color: rgb(139, 139, 139);font-size: 35px;"></i><label for="">Đã bán</label>
+                        </span>
+                        <span class="ghichu">
+                            <i class="fa-regular fa-square" style="color: rgb(154, 205, 153);font-size: 35px;"></i><label for="">
+                                Ghế trống
+                            </label>
+                        </span>
+                    </div>
+                    <div class="screen">
+                        <div class="leftscreen"></div>
+                        <div class="screenlayout">Màn Hình</div>
+                    </div>
+                    <div id="gridcontainek"></div>
+    
+               
+                </div>
+    
+                <div class="containekright">
+                    <style>
+                        .containekright{
+                            width: 400px;
+                        }
+                    </style>
+                    <div class="topright">
+                        <div class="infoshowtime">
+                            <div style="display: flex;justify-content: space-evenly;">
+                                <div class="rap"><span>Movie Star Cinemas</span></div>
+                                <div class="rap"><span>Phòng: 05</span></div>
+                                <div class="rap"><span>Ghế trống: 00/200</span></div>
+                            </div>
+                            <div style="display: flex;justify-content: space-evenly;">
+                             
+                                <div class="rap">20-04-2024</div>
+                                <div class="rap">19:00 PM</div>
+                                <div class="rap">19:34 PM</div>
+                            </div>
+                        </div>
+                       <center> <div class="phiminfo"></center>
+                            <img src="anh2.jpg" alt="">
+                            <br><div class="namephim">
+                                <div class="namecon">KungFu Panda 4</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="infomore">
+                                Thời lượng: 120 phút
+                            </div>
+                            <div class="infomore">
+                                Thể loại: Hoạt Hình, Hài Hước
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containekmain2" id="containekmain2">
+                <div class="containekmain2head">
+                    <span>BẮP - NƯỚC</span>
+                </div>
+                <div class="bottombookingdlist" id="bottombookingdList">
+                  
+                    <div class="bottombookingditems">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/menuboard-combo1-2-2024-coonline-combo2_1710302669633.jpg?alt=media&token=4411c416-6a40-4b24-85ac-1dac89009ac8"
+                             alt="">
+                        <div class="bottombookingddescription">
+                            <input id="P1" value="100000" hidden />
+                            <div class="namecombo" id="N1">Combo 1</div>
+                            <div class="descombo">1 Bắp + 1 Nước </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button class="btns" id="B1" type="button" onclick="decrement(1)">-</button>
+                                <input class="numberi" id="I1" value="0" readonly>
+                                <button class="btns" id="b1" type="button" onclick="increment(1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottombookingditems">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/menuboard-combo1-2-2024-coonline-combo2_1710302669633.jpg?alt=media&token=4411c416-6a40-4b24-85ac-1dac89009ac8"
+                             alt="">
+                        <div class="bottombookingddescription">
+                            <input id="P2" value="200000" hidden />
+                            <div class="namecombo" id="N2">Combo 2</div>
+                            <div class="descombo">2 Bắp + 2 Nước </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button class="btns" id="B2" type="button" onclick="decrement(2)">-</button>
+                                <input class="numberi" id="I2" value="0" readonly>
+                                <button class="btns" id="b2" type="button" onclick="increment(2)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottombookingditems">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/menuboard-combo1-2-2024-coonline-combo2_1710302669633.jpg?alt=media&token=4411c416-6a40-4b24-85ac-1dac89009ac8"
+                             alt="">
+                        <div class="bottombookingddescription">
+                            <input id="P3" value="300000" hidden />
+                            <div class="namecombo" id="N3">Combo 3</div>
+                            <div class="descombo">3 Bắp + 3 Nước </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button class="btns" id="B3" type="button" onclick="decrement(3)">-</button>
+                                <input class="numberi" id="I3" value="0" readonly>
+                                <button class="btns" id="b3" type="button" onclick="increment(3)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottombookingditems">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/menuboard-combo1-2-2024-coonline-combo2_1710302669633.jpg?alt=media&token=4411c416-6a40-4b24-85ac-1dac89009ac8"
+                             alt="">
+                        <div class="bottombookingddescription">
+                            <input id="P4" value="400000" hidden />
+                            <div class="namecombo" id="N4">Combo 4</div>
+                            <div class="descombo">4 Bắp + 4 Nước </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button class="btns" id="B4" type="button" onclick="decrement(4)">-</button>
+                                <input class="numberi" id="I4" value="0" readonly>
+                                <button class="btns" id="b4" type="button" onclick="increment(4)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottombookingditems">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/menuboard-combo1-2-2024-coonline-combo2_1710302669633.jpg?alt=media&token=4411c416-6a40-4b24-85ac-1dac89009ac8"
+                             alt="">
+                        <div class="bottombookingddescription">
+                            <input id="P6" value="500000" hidden />
+                            <div class="namecombo" id="N6">Combo 5</div>
+                            <div class="descombo">5 Bắp + 5 Nước </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button class="btns" id="B6" type="button" onclick="decrement(6)">-</button>
+                                <input class="numberi" id="I6" value="0" readonly>
+                                <button class="btns" id="b6" type="button" onclick="increment(6)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottombookingditems">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/menuboard-combo1-2-2024-coonline-combo2_1710302669633.jpg?alt=media&token=4411c416-6a40-4b24-85ac-1dac89009ac8"
+                             alt="">
+                        <div class="bottombookingddescription">
+                            <input id="P5" value="600000" hidden />
+                            <div class="namecombo" id="N5">Combo 6</div>
+                            <div class="descombo">6 Bắp + 6 Nước </div>
+                            <div style="display: flex; justify-content: center; align-items: center;">
+                                <button class="btns" id="B5" type="button" onclick="decrement(5)">-</button>
+                                <input class="numberi" id="I5" value="0" readonly>
+                                <button class="btns" id="b5" type="button" onclick="increment(5)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="bottombooking">
+            <style>
+                .bottombooking{
+                    width: 1211px;
+                }
+            </style>
+            <button type="button"  onclick="seat()"><i class="fa-solid fa-circle-left"></i></button>
+            <div class="phimbottombooking">
+                <div>Tên phim: Kung Fu Panda 4</div>
+                <div>Thời lượng: 94 phút</div>
+                <div>Thể loại: Hoạt Hình, Hài Hước</div>
+                <div>Rạp: Movie Star Cinemas</div>
+                <div>Vé ngày: 20-04-2024</div>
+            </div>
+            <div class="ticketbottombooking">
+                <div id="ticketbill">
+                    <div style="width: 80%; color: rgb(236, 140, 140);">Chỗ ngồi: <span id="selectedList"></span></div>
+                    <div style="color: rgb(236, 140, 140);"><span id="price"></span>VNĐ</div>
+                </div>
+                <div id="ticketbill">
+                    <div style="width: 80%; color: rgb(236, 140, 140);">Combo:<div id="selectcombo"></div> </div>
+                    <div style="color: rgb(236, 140, 140);"><span id="pricecombo"></span>VNĐ</div>
+                </div>
+                <div id="ticketbill" style="border:none">
+                    <div style="width: 80%; color: rgb(236, 140, 140);">Tổng: </div>
+                    <div style="color: rgb(236, 140, 140);"><span id="totalpricefull"></span>VNĐ</div>
+                </div>
+                <div style="width: 100%;display: flex;justify-content: end;margin-top: 50px;"><button id="btncheckcount" type="button" onclick="Thanhtoan()">Thanh toán</button></div>
+            </div>
+            <button type="button" onclick="combodrink()"><i class="fa-solid fa-circle-right"></i></button>
+        </div>
+    </div>
+
+    <div class="foo">
+        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/1377814-spider-man-no-way-home-movie-2021-4k-pc-wallpaper.jpg?alt=media&token=d1c9d70a-cbb1-4c3b-b3b4-8a21ece675a1"
+            alt="">
+        <div class="man"></div>
+        <div class="foocontent" style="text-align: left;">
+            <div class="contentchild">
+                <div class="fooleft">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/logo5.webp?alt=media&token=b2b042cb-5aa4-4ce3-be87-39116bb5b9b1"
+                        style="height: 60px;width: auto;" alt="" class="logoimg">
+                    <p class="kn">Thương hiệu nhượng quyền, giám<br> <br>đốc - nhà sản xuất Mai Long Linh. <br> <br>Rất hân hạnh được đón tiếp các
+                        bạn.</p>
+                </div>
+            </div>
+           <div class="contentchild">
+            <div class="foobet">
+                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <div class="kn">Facebook: MovieStar Cinemas</div>
+                <div class="kn">Instagram: moviestar.cinemas</div>
+                <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/dathongbao.png?alt=media&token=b1d86be7-167f-4b62-b2c0-f2b0ffc6f34d"
+                    alt="" style="height: 50px;width: auto;margin-top: 20px;">
+            </div>
+           </div>
+            <div class="contentchild" >
+                <div class="fooright">
+                    <h4>LIÊN HỆ</h4>
+                    <div class="kn">Hotline: 1900 6017</div>
+                    <p class="kn">Giờ làm việc: 8:00 - 22:00 <br><br>(Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                    <div class="kn">Email hỗ trợ: moviestar@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+     window.onload = function() {
+        createGrid();
+        };
+</script>
+</body>
+
+</html>
