@@ -321,11 +321,10 @@ z-index: 999;
 }
 .containekmain2 {
     display: flex;
-    width: 100%;
+    width: 1221px;
     background-color: white;
     height: auto;
     display: none;
-    border: 2px solid black;
 }
 
 .containekmain2head {
@@ -460,24 +459,6 @@ z-index: 999;
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(217, 166, 122)), color-stop(0.72, rgb(189, 133, 73)), color-stop(0.86, rgb(148, 92, 28)));
-}
-
-.containekmain2 {
-    width: 100%;
-    background-color: white;
-    height: auto;
-    display: none;
-}
-
-.containekmain2head {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 2px solid black;
-    font-weight: bold;
-    font-size: 20px
 }
 
 .bottombookingdlist {
