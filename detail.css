@@ -1,0 +1,474 @@
+ /*Phần đầu trang: Header*/
+ div {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+.he {
+    align-content: center;
+    margin-right: 300px;
+    height: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: solid rgb(190, 186, 186);
+    justify-content: center;
+    background-color: #efdadd;
+    position: fixed;
+
+z-index: 999;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 20%;
+    width: auto;
+    font-weight: bold;
+
+}
+    li {
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+.main-menu li a {
+
+    text-decoration: none;
+    padding: 5px 10px;
+    color: rgb(75, 74, 74);
+}
+
+.main-menu li a:hover {
+    color: rgb(236, 140, 140);
+}
+
+.logoimg {
+    height: auto;
+    width: 150px;
+}
+
+    .dr {
+        display: none;
+        top: 40px;
+        position: absolute;
+        background-color: #fff4f4;
+        border: 3px solid rgb(233, 233, 233);
+        margin: 5px;
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .dr li {
+        float: none;
+        list-style: none;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+
+
+    li:hover .dr {
+        display: block;
+
+
+    }
+
+
+    .logo {
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .onefilm img {
+        height: 350px;
+        width: 230px;
+        border-radius: 20px;
+        border: 2px solid rgb(236, 140, 140);
+    
+    }
+    
+    .onefilm img:hover {
+        /* height: 380px;
+        width: 260px; */
+        cursor: pointer;
+    }
+    
+    .logo {
+        position: relative;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+        0% {
+            left: 0px;
+        }
+
+        25% {
+            left: 25px;
+        }
+
+        50% {
+            left: 0px;
+        
+        }
+
+        75% {
+            left: -25px;
+            
+        }
+
+        100% {
+            left: 0px;
+            
+        }
+    }
+/*Giữa trang: Phần Details*/ 
+.bo1 {
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+.tieude {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+    border-bottom: 3px solid #fe7900;
+    padding-bottom: 10px;
+}
+
+.phim-content {
+    width: 100%;
+}
+
+.phan1 {
+display: flex;
+width: 100%;
+margin-top: 40px;
+}
+
+.img {
+    height: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+
+
+.chitietphim {
+    width: 100%; 
+}
+
+    .tenphim {
+        height: 40px;
+        border-bottom: 1px solid rgb(185, 185, 185);
+        font-size: 23px;
+        font-weight: bold
+    }
+
+    .notin{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .not{
+        font-size: 15px;
+        padding-right: 10px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+
+.gioithieu {
+    display: flex;
+    margin-top: 20px;
+}
+
+.muc {
+    font-weight: bold;
+}
+
+.muc div {
+    height: 30px;
+    font-size: 20px;
+}
+
+.rpmuc {
+    color: rgb(94, 94, 94);
+    padding-left: 10px;
+}
+
+.rpmuc div {
+    height: 30px;
+    font-size: 15px;
+    align-items: center;
+    display: flex
+}
+
+.muave button {
+    border: none;
+    background-color: #fe7900;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+}
+
+.muave button:hover {
+    cursor: pointer; /*chuyển thành hình ngón tay khi di chuyển vào vị trí này*/
+    border: none;
+    background-color: #000648;
+    color: white;
+}
+
+.phan2 {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.det {
+   border-left: 3px solid #fe7900 ;
+    color: #fe7900;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.dett {
+    width: 100%;
+    height: auto;
+    font-size: 17px;
+    margin-bottom: 20px
+}
+.tchieu{
+    display: flex;
+    gap: 20px;  /*khoảng cách giữa các iteam*/
+    font-weight: bold;
+}
+.tchieu button{
+    border: none;
+    background-color:#c1c7c5;
+    color: black;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+.tchieu button:hover{
+    cursor: pointer;
+    background-color: #fe7900;
+
+}
+::-webkit-scrollbar {
+    display: none; 
+}
+.modalshowtime {
+display: none;
+position: fixed;
+z-index: 99999;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.9);
+}
+.modalshowtime-content {
+background-color: #f0e3d8;
+margin: 5% auto;
+padding: 20px 20px;
+border: 1px solid #888;
+width: 80%;
+height: 500px;
+overflow-y: scroll;
+}
+.clo {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.clo:hover,
+.clo:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+.da.selected {
+background-color: rgb(241, 188, 136);
+}
+
+.btncity.selectedne {
+background-color: black;
+color: #f0e3d8;
+border: none;
+border-radius: 5px
+}
+
+.da {
+display: flex;
+width: 100px;
+height: 60px;
+background-color: antiquewhite;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+border-radius: 5px;
+margin-right: 10px;
+}
+
+.ngay {
+margin-left: 10px;
+height: 50px;
+width: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.btncity {
+border: none;
+margin: 10px 10px;
+background-color: #f0e3d8;
+height: 50px
+}
+
+.theatershowtime {
+padding: 20px 20px;
+width: 95%;
+border-bottom: 1px solid grey;
+}
+
+.showtimee {
+margin-top: 20px
+}
+
+.name {
+font-size: 20px;
+font-weight: bold
+}
+
+.time {
+margin-left: 10px;
+border: 1px solid grey;
+height: 30px;
+
+background-color: #f0e3d8;
+border-radius: 5px
+}
+.time:hover {
+border: none;
+background-color: rgb(241, 188, 136);
+color: #000000;
+cursor: pointer;
+}
+    /*Phần cuối trang: Footer*/
+    .foo {
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+
+
+    }
+
+    .foo img {
+        width: 100%;
+
+    }
+
+    .man {
+        height: 400px;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+
+        background-color: black;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        opacity: 0.8;
+    }
+
+    .foocontent {
+        height: 250px;
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .fooleft {
+        height: 100%;
+        width: auto;
+       
+     
+    }
+
+   
+    .foobet {
+        height: 100%;
+        width: auto;
+        
+    }
+
+    .foobet h4 {
+        color: rgb(236, 140, 140);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .kn {
+        color: #ffeef1;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .fooright {
+        height: 100%;
+        width: auto;
+       
+    }
+
+    .fooright h4 {
+        color: rgb(236, 140, 140);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .contentchild{
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+       
+    }

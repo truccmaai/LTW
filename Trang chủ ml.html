@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body style="margin: 0;overflow-x: hidden;">
+    <div class="container">
+
+        <div class="menu">
+            <div class="logo">
+                <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/logo5.webp?alt=media&token=b2b042cb-5aa4-4ce3-be87-39116bb5b9b1"
+                    style="height: 70px;" alt="" class="logoimg">
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="Trang chủ.html">Trang chủ</a>
+                    <li><a href="">Phim</a>
+                        <ul class="dr">
+                            <li><a href="#">Phim sắp chiếu</a></li>
+                            <li><a href="#">Phim đang chiếu </a></li>
+
+                        </ul>
+                    </li>
+
+                    </li>
+
+                    <li><a href="">Giá vé</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Thành viên</a>
+                        <ul class="dr">
+                            <li><a href="#">Tài khoản</a></li>
+                            <li><a href="#">Quyền lợi </a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user"></i></a>
+                        <ul class="dr" id="checklogin">
+                            <li><a href="dangnhap.html">Đăng nhập</a></li>
+                            <li><a href="dangky.html">Đăng kí</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+<div style="height: 60px;"></div>
+        <div class="banner">
+            <div class="slider">
+                <div class="list">
+                    <div class="item">
+                        <img src="img/11.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/12.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/13.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/14.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/15.jpg" alt="">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+                <ul class="dots">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+ <div class="bo">
+            <div class="phim">
+                PHIM ĐANG CHIẾU
+            </div>
+            <div class="row" style="display: flex;justify-content: space-evenly;">
+                <div class="onefilm">
+                    <div class="ch">
+                        <img src="https://files.betacorp.vn/media%2fimages%2f2024%2f04%2f05%2fquy%2Dcai%2D135324%2D050424%2D10.jpg"
+                            alt="">
+                        <div class="seemore">
+
+                        </div>
+                        <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                    </div>
+                    <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">
+                        QỦY CÁI</div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Kinh dị </div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">131 phút</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">10-02-2024</div>
+                    </div>
+                    <div style="width: 230px;"><button class="btn">Mua vé</button></div>
+                </div>
+                <div class="onefilm">
+                    <div class="ch">
+                        <img src="https://files.betacorp.vn/media%2fimages%2f2024%2f03%2f31%2f400x633%2D163702%2D310324%2D66.jpg"
+                            alt="">
+                        <div class="seemore">
+
+                        </div>
+                        <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                    </div>
+                    <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">
+                        THANH XUÂN 18X2</div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại</div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Tình cảm</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">95 phút</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">01-03-2024</div>
+                    </div>
+                    <div style="width: 230px;"><button class="btn">Mua vé</button></div>
+                </div>
+                <div class="onefilm">
+                    <div class="ch">
+                        <img src="https://files.betacorp.vn/media%2fimages%2f2024%2f03%2f31%2f400x633%2D7%2D171143%2D310324%2D77.jpg"
+                            alt="">
+                        <div class="seemore">
+
+                        </div>
+                        <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                    </div>
+                    <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">BIỆT
+                        ĐỘI SĂN MA
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Hài hước, Tình Cảm </div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">120 phút</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">17-02-2024</div>
+                    </div>
+                    <div style="width: 230px;"><button class="btn">Mua vé</button></div>
+                </div>
+                <div class="onefilm">
+
+                    <a href="moviedetail.html">
+                        <div class="ch">
+                            <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/media_images_2024_01_09_kungfu-panda-161211-090124-15.png?alt=media&token=cc7c034c-ccb9-4848-aa5f-8a23ff325f46"
+                                alt="">
+                            <div class="seemore">
+                            </div>
+                            <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                             </div>
+                  </a>
+           <div class="onefilm">
+            <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">KUNG FU PANDA 4
+</div>
+            <div style="display: flex;margin-bottom: 3px;">
+                <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại: </div>
+                <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Hoạt Hình, Hài Hước</div>
+            </div>
+            <div style="display: flex;margin-bottom: 3px;">
+                <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">94 phút</div>
+            </div>
+            <div style="display: flex;margin-bottom: 3px;">
+                <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">08-03-2024</div>
+            </div>
+            <div style="width: 230px;">
+                <a href="#"><button class="btn">Mua vé</button></a>
+            </div>
+           </div>
+            </div>
+        </div>
+    </div>
+        <div class="bo"> <br>
+            <div class="row" style="display: flex;justify-content: space-evenly;">
+                <div class="onefilm">
+                    <div class="ch">
+                        <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/thumbnail/240x388/c88460ec71d04fa96e628a21494d2fd3/p/o/poster_payoff_godzilla_va_kong_3_1_.jpg"
+                            alt="">
+                        <div class="seemore">
+
+                        </div>
+                        <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                    </div>
+                    <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">
+                        GODZILLA X KONG </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Hành động </div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">115 phút</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">29-03-2024</div>
+                    </div>
+                    <div style="width: 230px;"><button class="btn">Mua vé</button></div>
+                </div>
+                <div class="onefilm">
+                    <div class="ch">
+                        <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/thumbnail/240x388/c88460ec71d04fa96e628a21494d2fd3/r/s/rsz_1200x1800_2.jpg"
+                            alt="">
+                        <div class="seemore">
+
+                        </div>
+                        <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                    </div>
+                    <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">
+                       MÙA HÈ CỦA LUCA</div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại</div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Tình cảm</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">124 phút</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">18-04-2024</div>
+                    </div>
+                    <div style="width: 230px;"><button class="btn">Mua vé</button></div>
+                </div>
+                <div class="onefilm">
+                    <div class="ch">
+                        <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/w/a/wannabe_-_main_poster.jpg"
+                            alt="">
+                        <div class="seemore">
+
+                        </div>
+                        <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                    </div>
+                    <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">HÀO QUANG ĐẪM MÁU
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Kinh dị </div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">116 phút</div>
+                    </div>
+                    <div style="display: flex;margin-bottom: 3px;">
+                        <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                        <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">19-04-2024</div>
+                    </div>
+                    <div style="width: 230px;"><button class="btn">Mua vé</button></div>
+                </div>
+                <div class="onefilm">
+
+                        <div class="ch">
+                            <img src="https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/thumbnail/240x388/c88460ec71d04fa96e628a21494d2fd3/4/7/470wx700h-b4s_3.jpg"
+                                alt="">
+                            <div class="seemore">
+                            </div>
+                            <h5 style="color: white;cursor: pointer;" class="h">Xem chi tiết</h5>
+                             </div>
+
+           <div class="onefilm">
+            <div style="color: rgb(236, 140, 140);font-weight: bold;font-size: 18px;margin-bottom: 10px;">B4S–TRƯỚC GIỜ “YÊU”</div>
+            <div style="display: flex;margin-bottom: 3px;">
+                <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thể loại: </div>
+                <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">Hoạt Hình, Hài Hước</div>
+            </div>
+            <div style="display: flex;margin-bottom: 3px;">
+                <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Thời lượng: </div>
+                <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">94 phút</div>
+            </div>
+            <div style="display: flex;margin-bottom: 3px;">
+                <div style="font-weight: bold;font-size: 14px;color: rgb(99, 99, 99);">Khởi chiếu: </div>
+                <div style="font-size: 14px;color: rgb(99, 99, 99);margin-left: 3px;">08-03-2024</div>
+            </div>
+            <div style="width: 230px;">
+                <a href="#"><button class="btn">Mua vé</button></a>
+            </div>
+           </div>
+            </div>
+        </div>
+    </div>
+    <div class="foo">
+        <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/1377814-spider-man-no-way-home-movie-2021-4k-pc-wallpaper.jpg?alt=media&token=d1c9d70a-cbb1-4c3b-b3b4-8a21ece675a1"
+            alt="">
+        <div class="man"></div>
+        <div class="foocontent">
+            <div class="contentchild">
+                <div class="fooleft">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/logo5.webp?alt=media&token=b2b042cb-5aa4-4ce3-be87-39116bb5b9b1"
+                        style="height: 60px;width: auto;" alt="" class="logoimg">
+                    <p class="kn">Thương hiệu nhượng quyền, giám<br> <br>đốc - nhà sản xuất Mai Long Linh. <br> <br>Rất hân hạnh được đón tiếp các
+                        bạn.</p>
+                </div>
+            </div>
+           <div class="contentchild">
+            <div class="foobet">
+                <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                <div class="kn">Facebook: MovieStar Cinemas</div>
+                <div class="kn">Instagram: moviestar.cinemas</div>
+                <img src="https://firebasestorage.googleapis.com/v0/b/movieticketbooking-7da83.appspot.com/o/dathongbao.png?alt=media&token=b1d86be7-167f-4b62-b2c0-f2b0ffc6f34d"
+                    alt="" style="height: 50px;width: auto;margin-top: 20px;">
+            </div>
+           </div>
+            <div class="contentchild" >
+                <div class="fooright">
+                    <h4>LIÊN HỆ</h4>
+                    <div class="kn">Hotline: 1900 6017</div>
+                    <p class="kn">Giờ làm việc: 8:00 - 22:00 <br><br>(Tất cả các ngày bao gồm cả Lễ Tết)</p>
+                    <div class="kn">Email hỗ trợ: moviestar@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>
