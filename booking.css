@@ -178,7 +178,7 @@ z-index: 999;
 }
 
 .containekright {
-    width: 30%;
+    width: 40%;
 }
 
 .containekmain {
@@ -276,7 +276,7 @@ z-index: 999;
 .bottombooking {
     display: flex;
     height: auto;
-    width: 80%;
+    width: 79.3%;
     justify-content: space-evenly;
     margin: auto;
     padding-left: 10px;
@@ -321,7 +321,7 @@ z-index: 999;
 }
 .containekmain2 {
     display: flex;
-    width: 1221px;
+    width: 100%;
     background-color: white;
     height: auto;
     display: none;
@@ -396,24 +396,15 @@ z-index: 999;
 .descombo {
     font-size: 14px;
 }
-.bottombooking {
-    display: flex;
-    height: auto;
-    width: 80%;
-    justify-content: space-evenly;
-    margin: auto;
-    border: 2px solid black;
-    border-top: none;
-}
 
-    .bottombooking button {
-        background-color: white;
-        border: none;
-        font-size: 40px;
-        width: 15%;
-        color: rgb(255, 145, 0);
-        cursor: pointer;
-    }
+.bottombooking button {
+    background-color: white;
+    border: none;
+    font-size: 40px;
+    width: 15%;
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+}
 
 .phimbottombooking {
     height: 100%;
@@ -433,9 +424,9 @@ z-index: 999;
     font-weight: bold;
 }
 
-    .ticketbottombooking div {
-        margin: 10px 10px;
-    }
+.ticketbottombooking div {
+    margin: 10px 10px;
+}
 
 #ticketbill {
     justify-content: space-between;
@@ -460,32 +451,6 @@ z-index: 999;
     border-radius: 10px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(217, 166, 122)), color-stop(0.72, rgb(189, 133, 73)), color-stop(0.86, rgb(148, 92, 28)));
 }
-
-.bottombookingdlist {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly
-}
-
-.bottombookingditems {
-    width: 30%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f7f0ff;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-    .bottombookingditems img {
-        width: 40%;
-        height: auto;
-        border-radius: 10px;
-    }
 
 .bottombookingddescription {
     width: 50%;
